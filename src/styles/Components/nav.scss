@@ -1,0 +1,195 @@
+
+// LA BARRE DE NAVI COMMENCE ICI
+.header-container{
+  position: fixed;
+  height: 70px;
+  background: white;
+  width: 100%;
+  z-index: 2;
+  @media screen and (min-width: 768px){
+    height: 100px;
+    position: relative;
+  }
+  &-nav{
+    max-width: 1440px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &-input-close{
+    display: none;
+    position: absolute;
+    top: 35px;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 768px){
+    position: relative;
+    top: 20px;
+    left: 90px;
+    }
+    @media screen and (min-width: 1024px){
+      display: block;
+      margin-left: 20px;
+      top: 10px;
+    }
+  }
+  &-input{
+    border: 1px solid black;
+    width: 170px;
+    height:20px;
+  }
+  &-close{
+    position: relative;
+    top: 0;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    @media screen and (min-width: 768px){
+      top: -15px;
+      left: 150px;
+    }
+    @media screen and (min-width: 1024px){
+      display: none;
+    }
+  }
+  &-logo{
+    width: 50px;
+    height: auto;
+    @media screen and (min-width: 768px){
+      width: 50px;
+    }
+  }
+  &-btn-search{
+    width: 30px;
+    height: 30px;
+    @media screen and (min-width: 768px){
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+    }
+    @media screen and (min-width: 1024px){
+      position: relative;
+      left: 185px;
+      z-index: 4;
+      width: 15px;
+      height: 15px;
+      margin-left: 0px;
+    }
+  }
+  .list{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    @media screen and (min-width: 768px){
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      top: 0px;
+      align-items: center;
+    }
+
+    &-item{
+    font-family: $font-tahoma;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    @media screen and (min-width: 768px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+      @include font-size(12px);
+      padding-left: 10px;
+    }
+   }
+   &-social-media{
+     margin-top: 30px;
+     display: flex;
+     justify-content: space-evenly;
+   }
+   &-fb-logo,&-tt-logo,&-itg-logo,&-yt-logo{
+     width: 20px;
+     height: 20px;
+   }
+  }
+}
+.menu-trigger{
+  margin-right: 25px;
+  width: 25px;
+  z-index: 1;
+  position: relative;
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+  cursor: pointer;
+  .line{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 9px;
+    height: 2px;
+    background: black;
+    transition: 0.3s;
+    &.line-1{
+      transition: all 0.2s 0.2s, transform 0.2s 0s;
+    }
+    &.line-2{
+      margin-top: -1px;
+      transition: all 0.2s 0.2s;
+    }
+    &.line-3{
+      bottom: 0;
+      top: auto;
+      transition: all 0.2s 0.2s, transform 0.2s 0s;
+    }
+  }
+  &.active{
+    .line-1{
+      top: 50%;
+      margin-top: -1px;
+      transform: rotate(45deg);
+      transition: all 0.2s, transform 0.2s 0.2s;
+    }
+    .line-2{
+      opacity: 0;
+      transition: all 0.2s, opacity 0.2s 0s;
+    }
+    .line-3{
+      bottom: 50%;
+      margin-bottom: -1px;
+      transform: rotate(-45deg);
+      transition: all 0.2s, transform 0.2s 0.2s;
+    }
+  }
+}
+
+
+
+
+
+.navDown {
+display: block !important;
+}
+.-navOpenBackground{
+  width: 100%;
+  height: 100vh;
+  border-top: 5px solid $orange;
+  background: white;
+  @media screen and (min-width: 768px){
+    background: none;
+    border-top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.-none{
+  display: none !important;
+}

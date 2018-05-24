@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+// global
+@import './global/reset';
+@import './global/variables';
+
+// mixins
+@import './mixins/forsize';
+
+//components
+@import './components/maintop';
+@import './components/nav';
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+li:after{
+  content : '';
+  display:block;
+  height : 1px;
+  width : 0%;
+  background : black;
+}
+li:hover:after{
+  content : '';
+  display:block;
+  height : 1px;
+  width : 100%;
+  transition : 0.5s;
+  background : black;
+}
+.header{
+  background: url('../img/background.png') center no-repeat ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    &-white-block1{
+      background: white;
+      width: 90px;
+      height: 50vh;
+    }
+    &-white-block2{
+      background: white;
+      width: 150px;
+      height: 50vh;
+    }
+    &-white-block1-login{
+      margin-top: 100px;
+      margin-left: 40px;
+      display: inline-block;
+      font-family : $font-tahoma;
+      width: 1px;
+    }
+    &-white-block1-login:after{
+      content: '';
+      position: absolute;
+      left: 45px;
+      width: 1px;
+      height: 40px;
+      background: black;
+    }
+    &-white-block1-signup{
+      margin-top: 40px;
+      margin-left: 37px;
+      font-family : $font-tahoma;
+      width: 1px;
+      display:block;
+
+    }
+    &-white-block2-text{
+      position: relative;
+      top: 100px;
+      left: 0px;
+      width: 140px;
+      transform: rotate(-90deg);
+      display: block;
+      font-family : $font-tahoma;
+      @include font-size(48px);
+    }
+    &-h1-text{
+      display: inline-block;
+      width: auto;
+      position: absolute;
+      top: 100px;
+      right: 35%;
+      transform: translate(50%,30%);
+      @include font-size(48px);
+      @media screen and (min-width: 449px){
+        top: 150px;
+      }
+      @media screen and (min-width: 768px){
+        top: 300px;
+      }
+    }
+    &-h1-first-text-part{
+      // margin-left: 215px;
+    }
+}

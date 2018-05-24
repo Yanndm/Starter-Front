@@ -1,0 +1,175 @@
+.title{
+  margin-left: 390px;
+  margin-top: 80px;
+  width: 770px;
+  height: 86px;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}
+
+.topMainContainer{
+  height: 535px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @media screen and (max-width: 768px){
+  display: block;
+  }
+}
+
+.topContainer{
+  border: solid 1px;
+  width: 389px;
+  height: 389px;
+  padding: 10px;
+  @media screen and (max-width: 768px){
+  border: 0;
+  }
+}
+
+.topMainTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 768px){
+  margin-top: 100px;
+  }
+}
+
+.rankingcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rankContainer{
+}
+
+.rank{
+  font-size: 80px;
+  width: 84px;
+  height: 88px;
+
+}
+
+.name1{
+  margin-top: 30px;
+}
+
+.name2{
+  margin-top: 30px;
+}
+
+.name3{
+  margin-top: 30px;
+}
+
+.name{
+  width: 210px;
+  height: 54px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.more{
+  margin-left: 140px;
+  margin-top: 13px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* -------------------- TOP 100 RESTO ------------------------- */
+
+.topRestaurantContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 230px;
+  @media screen and (max-width: 768px){
+    margin-left: -25px;
+    margin-top: 0px;
+  }
+}
+
+.topRestaurant{
+
+}
+
+.description{
+  width: 245px;
+  height: 132px;
+  margin-left: 300px;
+  margin-top: -132px;
+  font-size: 18px;
+  @media screen and (max-width: 768px){
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
+.topimg{
+  width: 269px;
+  height: 179px;
+  @media screen and (max-width: 768px){
+    margin-left: 50px;
+  }
+}
+
+.topName{
+  margin-left: 110px;
+  @media screen and (max-width: 768px){
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-left: 80px;
+
+  }
+}
+
+.topRank{
+  margin-top: 100px;
+  height: 100px;
+  width: 100px;
+  @media screen and (max-width: 768px){
+    margin-left: 150px;
+  }
+}
+
+.topMore{
+  font-size: 30px;
+  width: 370px;
+  height: 150px;
+  margin-top: 200px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.topRestaurantContainer2{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 230px;
+  margin-bottom: 100px;
+  @media screen and (max-width: 768px){
+    margin-left: -25px;
+    margin-top: 0px;
+
+  }
+}
+
+
+/* ---------------------------------------------- JS------------------------------------------ */
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: flex;
+}
